@@ -120,7 +120,7 @@ const translations: Record<string, Translation> = {
     aboutUs: 'من نحن',
     termsConditions: 'الشروط والأحكام',
     privacyPolicy: 'سياسة الخصوصية',
-    copyright: '© 2024 حجز السفر. جميع الحقوق محفوظة.',
+    copyright: '© 2025 حجز السفر. جميع الحقوق محفوظة.',
     quickLinks: 'روابط سريعة',
     followUs: 'تابعنا',
   },
