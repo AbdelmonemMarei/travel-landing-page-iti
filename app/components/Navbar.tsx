@@ -24,14 +24,14 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className={`flex items-center ${isRTL ? 'order-3' : 'order-1'}`}>
+          <div className={`flex items-center order-1`}>
             <span className="text-2xl font-bold text-[#2E8BC0]">
               {isRTL ? 'حجز السفر' : 'TravelBooking'}
             </span>
           </div>
 
           {/* Desktop Navigation */}
-          <div className={`hidden md:flex items-center space-x-8 ${isRTL ? ' flex-row-reverse space-x-reverse order-1' : 'order-2'}`}>
+          <div className={`hidden md:flex items-center space-x-8 order-2 ${isRTL ? ' space-x-reverse ' : ''}`}>
             {navItems.map((item) => (
               <a
                 key={item.key}
@@ -44,7 +44,7 @@ const Navbar = () => {
           </div>
 
           {/* Language Switcher */}
-          <div className={`flex items-center space-x-4 ${isRTL ? 'space-x-reverse order-2' : 'order-3'}`}>
+          <div className={`flex items-center space-x-4 order-3 ${isRTL ? 'space-x-reverse ' : ''}`}>
             <button
               onClick={toggleLanguage}
               className="flex items-center space-x-2 px-3 py-2 rounded-lg bg-[#F18F01] text-white hover:bg-[#e67e00] transition-colors duration-200"
