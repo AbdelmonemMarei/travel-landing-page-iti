@@ -24,7 +24,7 @@ const Hero = () => {
         <h1 className={`text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight ${isRTL ? 'text-right' : 'text-left'}`}>
           {t.heroTitle}
         </h1>
-        <p className={`text-xl sm:text-2xl text-gray-200 mb-8 ${isRTL ? 'text-right' : 'text-left'}`}>
+        <p className={`text-xl sm:text-2xl text-gray-200 mb-8 text-center`}>
           {t.heroSubtitle}
         </p>
         <button className="group inline-flex items-center px-8 py-4 bg-[#F18F01] text-white font-semibold rounded-lg hover:bg-[#e67e00] transition-all duration-300 transform hover:scale-105">
