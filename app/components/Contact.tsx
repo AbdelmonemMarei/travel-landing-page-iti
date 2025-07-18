@@ -45,7 +45,7 @@ const Contact = () => {
             </h3>
             
             <div className="space-y-6">
-              <div className="flex items-center">
+              <div className="flex items-center gap-2">
                 <div className="flex-shrink-0 w-12 h-12 bg-[#2E8BC0] rounded-full flex items-center justify-center">
                   <Mail className="w-6 h-6 text-white" />
                 </div>
@@ -55,7 +55,7 @@ const Contact = () => {
                 </div>
               </div>
               
-              <div className="flex items-center">
+              <div className="flex items-center gap-2">
                 <div className="flex-shrink-0 w-12 h-12 bg-[#2E8BC0] rounded-full flex items-center justify-center">
                   <Phone className="w-6 h-6 text-white" />
                 </div>
@@ -65,14 +65,14 @@ const Contact = () => {
                 </div>
               </div>
               
-              <div className="flex items-center">
+              <div className="flex items-center gap-2 ">
                 <div className="flex-shrink-0 w-12 h-12 bg-[#2E8BC0] rounded-full flex items-center justify-center">
                   <MapPin className="w-6 h-6 text-white" />
                 </div>
                 <div className={`ml-4 ${isRTL ? 'text-right' : 'text-left'}`}>
                   <p className="text-sm text-gray-600">{isRTL ? 'العنوان' : 'Address'}</p>
                   <p className="text-lg font-medium text-gray-900">
-                    {isRTL ? 'شارع الأمير محمد بن عبدالعزيز، الرياض' : '123 Travel Street, New York, NY 10001'}
+                    {isRTL ? '١٢٣ شارع التحرير، القاهرة، مصر' : '123 Travel Street, New York, NY 10001'}
                   </p>
                 </div>
               </div>
