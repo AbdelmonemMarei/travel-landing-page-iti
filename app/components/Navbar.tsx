@@ -44,7 +44,7 @@ const Navbar = () => {
           </div>
 
           {/* Language Switcher */}
-          <div className={`flex items-center space-x-4 `}>
+          <div className={`flex items-center space-x-4 ${isRTL ? 'space-x-reverse order-2' : 'order-3'}`}>
             <button
               onClick={toggleLanguage}
               className="flex items-center space-x-2 px-3 py-2 rounded-lg bg-[#F18F01] text-white hover:bg-[#e67e00] transition-colors duration-200"
