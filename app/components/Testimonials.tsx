@@ -75,7 +75,7 @@ const Testimonials = () => {
                 ))}
               </div>
               
-              <p className={`text-lg text-gray-700 mb-6 leading-relaxed italic ${isRTL ? 'text-right' : 'text-left'}`}>
+              <p className={`text-lg text-gray-700 mb-6 leading-relaxed italic text-center`}>
                 "{testimonials[currentSlide].review}"
               </p>
               
@@ -104,7 +104,7 @@ const Testimonials = () => {
           </button>
 
           {/* Dots Indicator */}
-          <div className="flex justify-center mt-8 space-x-2">
+          <div className="flex justify-center mt-8 gap-2">
             {testimonials.map((_, index) => (
               <button
                 key={index}
